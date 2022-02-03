@@ -1,0 +1,100 @@
+body{
+    overflow: scroll;
+    margin: 0;
+    background-image: url('/Hero/IMG/logo.png');
+    background-color: #000;
+    background-size: 100x 100px;
+    background-repeat: no-repeat;
+    height: 97vh;
+    background-position: center center;
+}
+nav#nav{
+    margin: 0px;
+    background: #61f0fa13;
+    font-family: 'Rubik', sans-serif;
+    padding: 40px;      
+    border-radius: 0px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+                    
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;    
+     
+}
+nav > ul > li{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-right: 20px;
+    position: relative;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+nav > ul > li > .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 50px;
+    border-radius: 1px;
+    box-shadow: 0 0 10px #212527;
+    z-index: 2;
+    background: #202427;    
+}
+nav > ul > li.active,
+nav > ul > li:hover {
+    background: #F41662;
+}
+nav > ul > li.active a,
+nav > ul > li:hover a {
+    color: #ffffff;
+    
+}
+nav > ul > li.active > .submenu,
+nav > ul > li:hover > .submenu {
+    display: flex;
+    min-width: 10px;
+      
+}
+nav > ul > li > .submenu > .col  {
+    width: 100%;
+    
+}
+nav > ul > li > .submenu > .col strong {
+    font-weight: 300;
+    color: #b5bbbb;
+    margin-bottom: 1px;
+    margin: 0 15px;
+    display: inline-block;
+    font-size: 12;
+} 
+nav > ul > li > .submenu > .col a {
+    color: #dfdfdf;
+    display: block;
+    margin: 10px;
+    font-weight: 300px;
+    
+}
+nav > ul > li > .submenu > .col a:hover {
+    color: #fff;
+    
+}
+nav .links a {
+    margin: 0 15px;
+    
+}
